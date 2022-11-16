@@ -5,3 +5,28 @@
 body {
     background-color: pink;
 }
+
+/* navigation bar */
+.nav-link { /* navigation links */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* website layout */
+.box1 {
+    height: 300px;
+}
+.box2, .box3, .box4, .box5, .box6 {
+    height: 500px;
+    /* width: 500px; */
+}
+.box1, .box3, .box5 {
+    background-color: yellow;
+    border: 3px solid black;
+}
+.box2, .box4, .box6 {
+    background-color: orangered;
+    border: 3px solid green;
+    /* left: 1000px; */
+    /* position: relative; */
+}
