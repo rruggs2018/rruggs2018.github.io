@@ -9,16 +9,31 @@ body {
 /* navigation bar */
 .nav-link { /* navigation links */
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
+    color: grey;
+}
+.nav-link:hover {
+    background-color: lightblue;
+    border-radius: 3px;
+}
+a.nav-link {
+    border-bottom: 3px solid grey;
+    border-radius: 2px;
+    padding: 0px 10px 0px 10px;
+    margin: 3px 10px 5px 10px;
+}
+a.active { /* if a navigation link is active */
+    color: black;
+    border-bottom: 3px solid black;
 }
 
 /* website layout */
-.box1 {
+.box1 { /* name, career title */
     height: 300px;
+    text-align: center;
 }
 .box2, .box3, .box4, .box5, .box6 {
     height: 500px;
-    /* width: 500px; */
 }
 .box1, .box3, .box5 {
     background-color: yellow;
@@ -27,6 +42,9 @@ body {
 .box2, .box4, .box6 {
     background-color: orangered;
     border: 3px solid green;
-    /* left: 1000px; */
-    /* position: relative; */
+}
+
+/* first section: name and career title */
+.box1-text {
+    margin: 100px 0px;
 }
