@@ -4,6 +4,7 @@
 /* background */
 body {
     background-color: pink;
+    display: block;
 }
 
 /* navigation bar */
@@ -33,7 +34,9 @@ a.active { /* if a navigation link is active */
     /* text-align: center; */
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    
 }
 .box2, .box3, .box4, .box5, .box6 {
     height: 500px;
@@ -49,15 +52,17 @@ a.active { /* if a navigation link is active */
 
 /* first section: name and career title */
 .box1-text {
-    margin: 100px 0px;
+    /* margin: 0px 0px; */
+    border: 3px solid blue;
 }
 .box1-image {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin: auto;
+    /* margin: auto; */
     display: block;
     background-color: black;
+    border: 3px solid green;
     z-index: 1;
     /* top:0%; */
     /* left:0%; */
