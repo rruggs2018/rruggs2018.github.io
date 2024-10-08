@@ -51,7 +51,7 @@ a.active { /* if a navigation link is active */
 }
 
 /* first section: name and career title */
-.box1-text {
+.box1-text, .square1, .square2 {
     /* margin: 0px 0px; */
     border: 3px solid blue;
 }
@@ -66,6 +66,9 @@ a.active { /* if a navigation link is active */
     z-index: 1;
     /* top:0%; */
     /* left:0%; */
+}
+.squares {
+    flex-wrap: wrap;
 }
 
 
