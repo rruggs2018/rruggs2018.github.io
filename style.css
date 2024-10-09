@@ -3,11 +3,30 @@
 
 /* background */
 body {
-    background-color: pink;
+    /* background-color: pink; */
+    background-color: #000000;
     display: block;
+    color: white;
+}
+.box2-text button, .box1-text button { /* button styling */
+    background-color: transparent !important;
+    color: white;
+    border: 2px solid pink;
+    border-radius: 25px;
+    padding: 5px 20px;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: red !important;
+    /* transition: 0.5s; */
 }
 
 /* navigation bar */
+.navbar {
+    background-color: #101010;
+    box-shadow: 0px 0px 10px pink;
+}
 .nav-link { /* navigation links */
     font-size: 18px;
     font-weight: 600;
@@ -24,29 +43,43 @@ a.nav-link {
     margin: 3px 10px 5px 10px;
 }
 a.active { /* if a navigation link is active */
-    color: black;
-    border-bottom: 3px solid black;
+    color: pink;
+    border-bottom: 3px solid pink;
 }
 
 /* website layout */
-.box1 { /* name, career title, picture */
-    height: 500px;
-    /* text-align: center; */
+.page { /* black background; this will setup the entire webpage */
+    height: auto;
+}
+.box1 { /* this is the introduction section: profile picture and heading */
+    margin-top:200px;
+    margin-bottom: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-wrap: wrap; */
-    
+    gap: 50px;
+}
+.box { /* this is the box element that will go over the profile picture */
+    height: auto;
+    background-color: #101010;
+    width: 95%;
+    margin: auto;
+}
+.box2-text {
+    width: 80%;
+    margin:auto;
+    border: 3px solid red;
+    justify-content: center;
 }
 .box2, .box3, .box4, .box5, .box6 {
     height: 500px;
 }
-.box1, .box3, .box5 {
-    background-color: yellow;
-    border: 3px solid black;
+.box3, .box5 {
+    /* background-color: yellow; */
+    border: 3px solid red;
 }
 .box2, .box4, .box6 {
-    background-color: orangered;
+    /* background-color: orangered; */
     border: 3px solid green;
 }
 
@@ -55,20 +88,26 @@ a.active { /* if a navigation link is active */
     /* margin: 0px 0px; */
     border: 3px solid blue;
 }
-.box1-image {
+.box1-image { /* profile picture */
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    /* margin: auto; */
     display: block;
     background-color: black;
     border: 3px solid green;
     z-index: 1;
-    /* top:0%; */
-    /* left:0%; */
+    box-shadow: 0px 0px 50px pink;
 }
-.squares {
-    flex-wrap: wrap;
+.squares { /* 2nd section: my work; title/description and caraosel */
+    display: flex;
+    gap: 300px;
+    /* margin-left: 10%; */
+    /* align-items: center; */
+    justify-content: center; /* this moves the 2 boxes to the center */
+}
+.square1, .square2{
+    width: 400px;
+    height: 300px;
 }
 
 

@@ -13,7 +13,7 @@
     <body>
         <header>
             <!-- navigation bar (needs to be static)-->
-            <nav class="navbar sticky-top navbar-expand-lg bg-light">
+            <nav class="navbar fixed-top navbar-expand-lg">
                 <div class="container-fluid">
                     <!-- brand -->
                     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -33,47 +33,63 @@
             </nav>
         </header>
 
-        <!-- website layout -->
-        <div class="box1"> <!-- introduction: about me -->
-            <div class="box1-image">
-                <!-- picture: add my picture here -->
-                 <!-- <img src="#" alt=""> -->
-                  <!-- <p>s</p> -->
+        <!-- website layout 
+        this is the foundation of the webpage layout
+        black background with the picture and heading at the top
+        the rest of the elements will sit on a grey background and scroll over the picture and heading
+        -->
+        <div class="page"> 
+            <div class="box1">
+                <div class="box1-image">
+                    <!-- picture: add my picture here -->
+                     <!-- <img src="#" alt=""> -->
+                      <!-- <p>s</p> -->
+                </div>
+                <div class="box1-text"> 
+                    <h1>Hi! It's me, Raven Ruggs</h1>
+                    <p class="typing-text">I'm an aspiring programmer and web developer</p>
+                    
+                    <button>Contact me!</button> <!-- this button: clickable, show my contact information -->
+                </div>
             </div>
-            <div class="box1-text"> 
-                <h1>Hi! It's me, Raven Ruggs</h1>
-                <p class="typing-text">I'm an aspiring programmer and web developer</p>
+
+            <!-- 
+            this is the grey background that will scroll on top of the picture and heading
+            this will contain all of the elements
+            -->
+            <div class="box">
+                <div class="box2">
+                    <h1>A little something about me...</h1>
+                    <div class="box2-text">
+                        <p>I've been working remotely for the past few years, focusing primarily on software development and design. I recently graduated from a prestigious university with a degree in Computer Science and have been fortunate to work with some amazing companies.</p>
+                        <p>My goal is to continue learning and improving my skills, as well as to share my knowledge and experiences with others.</p>
+                        <button>Learn more!</button> <!-- this button: click -->
+                    </div>
+                </div>
+
+                <div class="box3"> <!-- showcase of my work -->
+                    <h1>My Work</h1>
+                    <p>Here's some of my projects that I've worked:</p>
+                    <div class="squares"> 
+                        <!-- display work in a carosel with the description and title displaying to the left and carosel on the right -->
+                        <div class="square1">
+                            <h2>title</h2>
+                            <p>description</p>
+                        </div>
+                        <div class="square2">
+                            <!-- carosel will be placed here -->
+                             <p>carosel</p>
+                        </div>
+                    </div>
+                </div>
                 
-                <button>Contact me!</button> <!-- this button: clickable, show my contact information -->
-            </div>
-        </div>
-
-        <div class="box2">
-            <h1>A little something about me...</h1>
-            <p>I've been working remotely for the past few years, focusing primarily on software development and design. I recently graduated from a prestigious university with a degree in Computer Science and have been fortunate to work with some amazing companies.</p>
-            <p>My goal is to continue learning and improving my skills, as well as to share my knowledge and experiences with others.</p>
-            <button>Learn more!</button> <!-- this button: click -->
-        </div>
-
-        <div class="box3"> <!-- showcase of my work -->
-            <h1>My Work</h1>
-            <p>Here's some of my projects that I've worked:</p>
-            <div class="squares"> 
-                <!-- display work in a carosel with the description and title displaying to the left and carosel on the right -->
-                <div class="square1">
-                    <h2>title</h2>
-                    <p>description</p>
-                </div>
-                <div class="square2">
-                    <!-- carosel will be placed here -->
-                     <p>carosel</p>
+                <div class="box4"> <!-- footer: copyright info -->
+                    <p>�� 2022 Raven Ruggs. All rights reserved.</p>
                 </div>
             </div>
         </div>
+
         
-        <div class="box4"> <!-- footer: copyright info -->
-            <p>�� 2022 Raven Ruggs. All rights reserved.</p>
-        </div>
 
         <!-- <div class="box4"></div> -->
         <!-- <div class="box5"></div> -->
