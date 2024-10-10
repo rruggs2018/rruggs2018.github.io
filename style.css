@@ -62,17 +62,39 @@ a.active { /* if a navigation link is active */
     justify-content: center;
     gap: 50px;
 }
-.box { /* this is the box element that will go over the profile picture */
+.box1-image { /* profile picture */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    background-color: black;
+    border: 3px solid green;
+    z-index: 1;
+    box-shadow: 0px 0px 50px pink;
+}
+.box { /* gray background; this is the box element that will go over the profile picture */
     height: auto;
     background-color: #101010;
     width: 95%;
     margin: auto;
 }
-.box2-text {
+.box2-text { /* brief description about me */
     width: 80%;
     margin:auto;
     border: 3px solid red;
     justify-content: center;
+}
+#overlay {
+    /* display:none; */
+    width: 95%;
+    margin:auto;
+    background-color: cadetblue;
+    border-radius: 10px;
+    height: 40em;
+    rotate: 180 y rotate;
+    z-index: 1;
+    position: relative;
+    border:3px solid blue;
 }
 .box2, .box3, .box4, .box5, .box6 {
     height: 500px;
@@ -89,16 +111,7 @@ a.active { /* if a navigation link is active */
     /* margin: 0px 0px; */
     border: 3px solid blue;
 }
-.box1-image { /* profile picture */
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    display: block;
-    background-color: black;
-    border: 3px solid green;
-    z-index: 1;
-    box-shadow: 0px 0px 50px pink;
-}
+
 .squares { /* 2nd section: my work; title/description and caraosel */
     display: flex;
     /* gap: 300px; */

@@ -58,12 +58,22 @@
             this will contain all of the elements
             -->
             <div class="box">
-                <div class="box2">
+                <div class="box2"> <!-- about me: a brief summary about me-->
                     <h2>A little something about me...</h2>
                     <div class="box2-text">
                         <p>I've been working remotely for the past few years, focusing primarily on software development and design. I recently graduated from a prestigious university with a degree in Computer Science and have been fortunate to work with some amazing companies.</p>
                         <p>My goal is to continue learning and improving my skills, as well as to share my knowledge and experiences with others.</p>
-                        <button>Learn more!</button> <!-- this button: click -->
+                        <button>Learn more!</button> <!-- this button: click to bring up resume overlay -->
+                    </div>
+
+                    <!-- overlay of my resume and cover letter when button is clicked -->
+                     <!-- shouldn't scroll out of view, should remain static
+                      have to click out of view to escape the resume book -->
+                    <div class="box2-1" id="overlay">
+                        <div class="container-fluid">
+                            <h3>my name</h3>
+                            <p>test</p>
+                        </div>
                     </div>
                 </div>
 
