@@ -1,11 +1,16 @@
 /* breakpoints */
-
+/* for iphone screen size, change display to grid and make sure elements align in center */
+/* No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }` */
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(xxl) { ... }
 
 /* background */
 body {
-    /* background-color: pink; */
     background-color: #000000;
-    display: block;
+    display: inline;
     color: white;
 }
 .box2-text button, .box1-text button { /* button styling */
@@ -19,7 +24,6 @@ body {
 }
 button:hover {
     background-color: red !important;
-    /* transition: 0.5s; */
 }
 
 /* navigation bar */
@@ -44,7 +48,6 @@ a.nav-link {
 }
 a.active { /* if a navigation link is active */
     color: pink;
-    border-bottom: 3px solid pink;
 }
 
 /* website layout */
@@ -75,11 +78,9 @@ a.active { /* if a navigation link is active */
     height: 500px;
 }
 .box3, .box5 {
-    /* background-color: yellow; */
     border: 3px solid red;
 }
 .box2, .box4, .box6 {
-    /* background-color: orangered; */
     border: 3px solid green;
 }
 
@@ -100,7 +101,7 @@ a.active { /* if a navigation link is active */
 }
 .squares { /* 2nd section: my work; title/description and caraosel */
     display: flex;
-    gap: 300px;
+    /* gap: 300px; */
     /* margin-left: 10%; */
     /* align-items: center; */
     justify-content: center; /* this moves the 2 boxes to the center */
