@@ -19,7 +19,12 @@ body {
     border: 2px solid pink;
     border-radius: 25px;
     padding: 5px 20px;
-    margin-top: 50px;
+    margin-top: 30px;
+    justify-content: center;
+    margin: auto;
+    /* display: flex; */
+    /* align-items: center; */
+    /* position: relative; */
     transition: 0.3s;
 }
 button:hover {
@@ -30,6 +35,10 @@ button:hover {
 .navbar {
     background-color: #101010;
     box-shadow: 0px 0px 10px pink;
+}
+.navbar-brand {
+    color: white;
+    font-family: "Kalnia Glaze", serif;
 }
 .nav-link { /* navigation links */
     font-size: 18px;
@@ -45,6 +54,7 @@ a.nav-link {
     border-radius: 2px;
     padding: 0px 10px 0px 10px;
     margin: 3px 10px 5px 10px;
+    font-family: "Edu AU VIC WA NT Guides", serif;
 }
 a.active { /* if a navigation link is active */
     color: pink;
@@ -55,16 +65,16 @@ a.active { /* if a navigation link is active */
     height: auto;
 }
 .box1 { /* this is the introduction section: profile picture and heading */
-    margin-top:200px;
-    margin-bottom: 200px;
+    margin-top:400px;
+    margin-bottom: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
 }
 .box1-image { /* profile picture */
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     display: block;
     background-color: black;
@@ -75,7 +85,7 @@ a.active { /* if a navigation link is active */
 .box { /* gray background; this is the box element that will go over the profile picture */
     height: auto;
     background-color: #101010;
-    width: 95%;
+    width: 99%;
     margin: auto;
 }
 .box2-text { /* brief description about me */
@@ -111,8 +121,33 @@ a.active { /* if a navigation link is active */
     /* margin: 0px 0px; */
     border: 3px solid blue;
 }
+.box1-text h1 { /* change font */
+    font-family: "Edu AU VIC WA NT Guides", serif;
+}
+.box1-text h3 { /* "i'm a ..." */
+    /* border: 3px solid blueviolet; */
+    margin-top: 20px;
+}
+.box1-text button { /* center the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+span { /* change certain color of the text to highlight */
+    color: pink;
+}
+.typing-text span { /* typing text effect */
+    position: relative;
+}
+@keyframes cursor { /* adds the blinking text cursor next to career title */
+    to {
+        border-left: 3px solid pink;
+    }
+}
 
-.squares { /* 2nd section: my work; title/description and caraosel */
+/* 2nd section: my work; title/description and caraosel */
+.squares { 
     display: flex;
     /* gap: 300px; */
     /* margin-left: 10%; */
@@ -123,6 +158,7 @@ a.active { /* if a navigation link is active */
     width: 400px;
     height: 300px;
 }
+
 
 
 /* 

@@ -7,6 +7,14 @@
         <!-- CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <!-- google text font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
         <!-- tab title -->
         <title>Raven Ruggs' Portfolio</title>
     </head>
@@ -16,7 +24,8 @@
             <nav class="navbar fixed-top navbar-expand-lg">
                 <div class="container-fluid">
                     <!-- brand -->
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <a class="navbar-brand" href="#">Raven Ruggs</a>
+                    <!-- brand image -->
                     <!-- <a class="navbar-brand" href="#">
                         <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
                     </a> -->
@@ -46,9 +55,27 @@
                       <!-- <p>s</p> -->
                 </div>
                 <div class="box1-text"> 
-                    <h1>Hi! It's me, Raven Ruggs</h1>
-                    <p class="typing-text">I'm an aspiring programmer and web developer</p>
-                    
+                    <h1>Hi! It's me, <span>Raven Ruggs</span></h1>
+                    <h3 class="typing-text">I'm an <span class="auto-type"></span> </h3>
+                    <!-- this adds the typing text effect -->
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script>
+                        var typed = new Typed(".auto-type", {
+                            strings: ["Web Designer", "Machine Learning Engineer", "Software Developer"],
+                            typeSpeed: 150,
+                            backSpeed: 50,
+                            loop: true
+                        });
+                    </script>
+                    <!-- 
+                    <div class="social icons">
+                        <a href="#"><i class="#"></i></a>
+                        <a href="#"><i class="#"></i></a>
+                        <a href="#"><i class="#"></i></a>
+                        <a href="#"><i class="#"></i></a>
+                        <a href="#"><i class="#"></i></a>
+                    </div> 
+                    -->
                     <button>Contact me!</button> <!-- this button: clickable, show my contact information -->
                 </div>
             </div>
